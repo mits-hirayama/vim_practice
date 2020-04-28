@@ -9,3 +9,5 @@ lesson1
 	git status
 	git commit -v
 	git log
+
+	vim is great!
