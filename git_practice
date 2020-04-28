@@ -3,3 +3,9 @@ lesson1
 	git add
 	git commit
 	git status
+
+	git status
+	git add .
+	git status
+	git commit -v
+	git log
