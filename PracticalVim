@@ -17,3 +17,10 @@ I'm so busy that I have no time to get around the city.
 f,Fはノーマルモードで使うことが多く、t,Tはオペレーター待機モードで使うことが多い。
 検索コマンドを使うコツとして単語中で出現率の低い文字を選択すれば速い。
 
+4/30	tips50
+/word<CR> word検索。しかもどの行でもいける。n/Nで先に行ったり戻ったりもできる。コツは全部打ち込むよりちょうどいい塩梅でヒットするとこまで入力。
+hlsearch 強調表示
+incsearch tips81参照
+This phrase takes time but eventually gets to the point.
+1./tak<CR> v/ge<CR>hd ビジュアルモードで検索して1文字戻って削除。
+2./tak<CR> d/ge<CR> この検索コマンドは排他的なモーション。最短。
