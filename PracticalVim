@@ -24,3 +24,16 @@ incsearch tips81参照
 This phrase takes time but eventually gets to the point.
 1./tak<CR> v/ge<CR>hd ビジュアルモードで検索して1文字戻って削除。
 2./tak<CR> d/ge<CR> この検索コマンドは排他的なモーション。最短。
+
+5/1	tips4
+・繰り返し操作
+やりたいこと		操作		繰り返し	戻る
+
+変更			{edit}		.		u
+行内検索		f/t		;		,
+検索			/(?)		n		N
+置換			:s/--/--	&		u
+一連の変更を実行	qx{change}q	@x		u
+
+5/2	tips31
+
