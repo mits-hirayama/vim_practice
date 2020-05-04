@@ -48,3 +48,17 @@ Yoru mum has a moustache.
 z= 修正候補リスト。最初の候補が正しいと確信できるなら1z=。
 zg/zw 現在の単語をスペルファイルに追加/削除
 zug 現在のコマンドに対してzg/zwコマンドをアンドゥ。
+
+5/4	tips87
+:substituteコマンドの構文。
+:[range]s/{pattern}/{string}/[flags]
+:[tips28]s/{12章}/
+置換コマンドの動作はフラグを使ってチューンできる。
+gフラグ 1行の中にあるすべてのマッチが変更される(globally)
+cフラグ ここの変更について実行するか確認する(confirm)
+nフラグ 置換動作を行わずマッチの数を報告する(number)tips82
+eフラグ エラーを非表示
+&フラグ 直前の置換コマンドを実行
+・置換文字列で使用する特殊文字
+:s/old/new/g
+It looks new bag.I want new one.New,new new,new.
