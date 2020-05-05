@@ -62,3 +62,12 @@ eフラグ エラーを非表示
 ・置換文字列で使用する特殊文字
 :s/old/new/g
 It looks new bag.I want new one.New,new new,new.
+
+5/5	tips5
+vimで一番重要なのはドットコマンドで、次に重要なのが*コマンド。
+* その時点でカーソル位置にある単語を検索する。
+We're waiting for content before the site can go live.
+If you are content with this, let's go ahead with it.
+We'll launch as soon as we have the content.
+:%s/old/new/g	%入れておくと1行内でなくページ内でやってくれる。
+/cont * cwcopy n .
