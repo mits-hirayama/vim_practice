@@ -71,3 +71,9 @@ If you are content with this, let's go ahead with it.
 We'll launch as soon as we have the content.
 :%s/old/new/g	%入れておくと1行内でなくページ内でやってくれる。
 /cont * cwcopy n .
+
+5/6	tips1,2,6
+>G/<G	インデントを深く/浅く
+カーソル移動用のキー入力１つと実行するキー入力が１つが理想形。
+この方法をドットの公式と呼ぶ。
+。
