@@ -77,3 +77,11 @@ We'll launch as soon as we have the content.
 カーソル移動用のキー入力１つと実行するキー入力が１つが理想形。
 この方法をドットの公式と呼ぶ。
 。
+
+tips9 vimゴルフ
+The end is night
+書いている途中でnightを消したい時
+1.dbx
+2.bdw
+3.daw (delete a word)
+キーストロークの数は同じだが繰り返し性が高い(ドットコマンドの有用性)のは3の時。できる限り変更は繰り返し可能なものとする習慣をつける。
