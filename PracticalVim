@@ -78,10 +78,19 @@ We'll launch as soon as we have the content.
 この方法をドットの公式と呼ぶ。
 。
 
-tips9 vimゴルフ
+5/7	tips9 vimゴルフ
 The end is night
 書いている途中でnightを消したい時
 1.dbx
 2.bdw
 3.daw (delete a word)
 キーストロークの数は同じだが繰り返し性が高い(ドットコマンドの有用性)のは3の時。できる限り変更は繰り返し可能なものとする習慣をつける。
+
+5/8	tips10 加算減算
+<C-a> 加算 カーソル以降にある数字に適用。
+<C-x> 減算
+.blog, .news { background-image: url(/sprite.png); }
+.blog { background-position: 0px 0px }
+.news { background-position: -360px -540px }
+yyp cW.news<ESC> 180<C-x>
+※ 007など0が頭につくものは８進数表記になることがある。(set nrformats= などを.vimrcにいれとく。)
