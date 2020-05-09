@@ -91,6 +91,13 @@ The end is night
 <C-x> 減算
 .blog, .news { background-image: url(/sprite.png); }
 .blog { background-position: 0px 0px }
-.news { background-position: -360px -540px }
+.news { background-position: 540px -180px }
 yyp cW.news<ESC> 180<C-x>
 ※ 007など0が頭につくものは８進数表記になることがある。(set nrformats= などを.vimrcにいれとく。)
+
+5/9 tips11 繰り返しか回数指定
+Delete more than one word.
+2dwとd2wとdw.の３通りが考えられるが消す単語数をミスした時のことを考えるとアンドゥの粒度が細かいドットが良い。d7wかd.......の場合、キーストロークでは前者が勝るが、数え間違いを防ぐために単語を数える暇があれはドットを7回押していった方がよい。
+I have a couple of questions.
+I have some more questions.
+この変更では挿入も必要でドットコマンドを使うことにそれほど意味はない。c3wしてsome moreとする方が挿入モードに入る手間も省けて良い。
