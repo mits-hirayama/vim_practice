@@ -1,7 +1,7 @@
 実践Vim 学習記録
  4/28	tips3
 'a+b'の+に余白を入れる作業を繰り返す場合。
-a+b a+b a+b a+b a+b a+b これら全てに空白を入れる場合。
+a + b a + b a + b a + b a + b a + b これら全てに空白を入れる場合。
 s 1文字を削除してインサートモードにする。
 f文字 前方文字検索
 ; fコマンドで実行した検索の内容を繰り返す。
@@ -16,6 +16,7 @@ I'm so busy that I have no time to get around the city.
 これをthat以降消したいがピリオドを残しておきたい時にtコマンドが便利。ftdt.で消せる。
 f,Fはノーマルモードで使うことが多く、t,Tはオペレーター待機モードで使うことが多い。
 検索コマンドを使うコツとして単語中で出現率の低い文字を選択すれば速い。
+※ :set nospell
 
 4/30	tips50
 /word<CR> word検索。しかもどの行でもいける。n/Nで先に行ったり戻ったりもできる。コツは全部打ち込むよりちょうどいい塩梅でヒットするとこまで入力。
@@ -60,7 +61,7 @@ nフラグ 置換動作を行わずマッチの数を報告する(number)tips82
 eフラグ エラーを非表示
 &フラグ 直前の置換コマンドを実行
 ・置換文字列で使用する特殊文字
-:s/old/new/g
+:s/new/new/g
 It looks new bag.I want new one.New,new new,new.
 
 5/5	tips5
@@ -89,8 +90,8 @@ The end is night
 <C-a> 加算 カーソル以降にある数字に適用。
 <C-x> 減算
 .blog, .news { background-image: url(/sprite.png); }
-.blog { background-position: 0px 0px }
-.news { background-position: 540px -180px }
+.blog { background-position: 3px 3px }
+.news { background-position: 178px -540px }
 yyp cW.news<ESC> 180<C-x>
 ※ 007など0が頭につくものは８進数表記になることがある。(set nrformats= などを.vimrcにいれとく。)
 
@@ -129,3 +130,7 @@ Practical Vim, by Drew Neil
 Read Drew Neil's
 Pの位置からyt, jA <C-r>0 .
 このコマンドの一般的な形式は<C-r>{register}となる。{register}は挿入したいレジスタのアドレス。<C-r><C-p>{register}でインデントなどテキスト通りになるが、複数行ある場合はノーマルモードに戻る方がよい。
+
+5/14 tips16	Expressionレジスタで計算<C-r>=
+6 cahirs, each costing $35, totals $
+A <C-r>= 6*35 <CR>
