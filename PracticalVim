@@ -134,3 +134,13 @@ Pの位置からyt, jA <C-r>0 .
 5/14 tips16	Expressionレジスタで計算<C-r>=
 6 cahirs, each costing $35, totals $
 A <C-r>= 6*35 <CR>
+
+5/15	tips16,17	文字コード
+5/15	tips18	置換モード
+Typing in Insert mode extends the line. But in Replace mode the line length does't change.
+ピリオドをカンマに変えてbを小文字にする。
+f. R, B<esc>
+R 上書き
+r 1文字置換してノーマルに戻る。
+s 1文字置換してのそまま入力モード
+gR/gr　仮想置換モード(タブを1文字としない)
