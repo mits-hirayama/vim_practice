@@ -180,3 +180,11 @@ Insert mode     31
 Visual mode     44
 |を入れてもっと表っぽく見えるようにする。
 <C-v>jjjxで無駄に開いた空白を一列分消す。gvコマンドで同じ範囲を再選択。r|で縦線が一気に入る。水平線は先頭行をコピーしてから行選択して全文字を置き換える。yypVr-
+
+tips25  ビジュアルブロックモードで同時に挿入
+url('/iamges/sprite/ping');
+url('/iamges/sprite/ping');
+url('/iamges/sprite/ping');
+imagesフォルダからcomponentsフォルダに移したい時。<C-v>jjec components<Esc>
+e 単語の最後まで移動
+なお、一行目だけに変更は起こるがノーマルモードに戻るタイミングで全行に適用される。
