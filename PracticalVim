@@ -134,6 +134,7 @@ Pの位置からyt, jA <C-r>0 .
 5/14 tips16	Expressionレジスタで計算<C-r>=
 6 cahirs, each costing $35, totals $
 A <C-r>= 6*35 <CR>
+これは挿入モードで行わないとアンドゥコマンドを戻ってしまうことに注意。
 
 5/15	tips16,17	文字コード
 5/15	tips18	置換モード
@@ -188,3 +189,11 @@ url('/iamges/sprite/ping');
 imagesフォルダからcomponentsフォルダに移したい時。<C-v>jjec components<Esc>
 e 単語の最後まで移動
 なお、一行目だけに変更は起こるがノーマルモードに戻るタイミングで全行に適用される。
+
+tips26  箱型でない時のブロックビジュアルモード
+var foo = 1
+var bar = 'a'
+var foobar = foo + bar
+適当なところでブロック選択してAを押すといい感じになる。これは行指向のブロック選択だと単純にビジュアルモードを抜けるだけっぽい。<C-v>jj$A;<Esc>
+さらにaやiだとうまくいかない。
+コメントアウトしたいときは<C-v>jj0I#<Esc>
