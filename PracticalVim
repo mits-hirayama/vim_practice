@@ -221,3 +221,13 @@ tips29  copy,move
 :6t.    6行目を現在行の下にコピー
 :6t     現在行を6行目のしたにコピー
 :.,$m0  現在行から最終行までを先頭行に移動
+
+tips30  Exコマンドの射程とノーマルモードの柔軟性を組み合わせる
+var foo = 1;
+var bar = 'a'
+var baz = 'z'
+var foobar = foo + bar
+var foobarbaz = foo + bar + baz
+一行目にセミコロンを追加してからビジュアルモードで選択して:'<,'>normal.
+:226,227normal A;でもいける。
+全行をコメントアウト　:%normal i//
