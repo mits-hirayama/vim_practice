@@ -231,3 +231,10 @@ var foobarbaz = foo + bar + baz
 一行目にセミコロンを追加してからビジュアルモードで選択して:'<,'>normal.
 :226,227normal A;でもいける。
 全行をコメントアウト　:%normal i//
+
+tips31  Exコマンドの繰り返し@:
+バッファリストの各要素に対して反復処理を行う時に便利。
+:bn[ext]
+:bp[revious]
+:next
+<C-o>32
