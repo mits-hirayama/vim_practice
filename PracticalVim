@@ -244,3 +244,32 @@ tips32  Exコマンドでタブ補完
 <S-Tab> 逆順に補完候補表示
 補完機能はwildmodeオプションを変更してカスタマイズできる。
 <C-n>,<C-j>,<C-p>,<C-k>などで選択。
+
+tips33  コマンドラインにコピー<C-r><C-w>
+* カーソル位置の単語を検索
+<C-r><C-w> カーソル位置にある単語をコピー
+var tally;
+for (counter = 1; tally <= 10; tally++){
+    // do something with tally
+};
+tallyをcounterに変える。*cw counter<Esc>
+この状態で:%s//<C-r><C-w>/g
+
+tips34  コマンドラインの履歴
+:<C-p>,<C-n>で履歴を上下できる。:helpとして上下するとhelpで始まるExコマンドをフィルタリングする。<Up><Down>でならフィルタリング機能を使えるので.vimrcに以下の設定。また、ヒストリはデフォで20なので増やしておく。
+:set history=200
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+tips35  シェルの実行
+:!ls シェルでlsを実行。
+:ls Vimの組み込みコマンド。
+% 現在編集中のファイルを表す。
+:shell  シェルを開始する。exitでVimに戻ってくる。
+:!{cmd} シェルでcmdを実行。
+:read !{cmd}    シェルで{cmd}を実行しその標準入力をカーソルの下の行に挿入する。
+
+tips36  バッファリスト
+:ls バッファリストを表示
+vi *.html
+:bn/:np バッファリストを移動
