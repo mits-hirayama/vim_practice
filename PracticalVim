@@ -310,3 +310,9 @@ findは相対パスを全部書かなければいけないがよく使うファ�
 :set path+=app/**
 **はサブディレクトリも含むワイルドカード。
 rails.vimを使えばpathを設定しないでも:findコマンドを使える。ファイル名がユニークでない場合も<Tab>で選択できる。
+
+tips42  netrw
+.vimrcに以下を記述
+set nocompatible
+filetype plugin on
+vi .で一気に開いて選択。ディレクトリ移動も可能。
